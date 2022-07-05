@@ -1,13 +1,19 @@
-// .feature {
-//     display: flex;
+.feature {
+    // display: flex;
 
-// }
+}
 
 .feature__item {
   // margin-right: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    &:last-child{
+      margin-bottom: 0;
+    }
   &::before {
     display: block;
     content: "";
+  
     height: 120px;
     background-repeat: no-repeat;
     background-position: center;
@@ -36,6 +42,7 @@
   margin-top: 0;
   margin-bottom: 10px;
   padding: 0;
+  text-align: center;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -44,7 +51,8 @@
 }
 
 .feature__text {
-  max-width: 270px;
+  // 
+  width: 100%;
   margin: 0;
   padding: 0;
   font-weight: 400;

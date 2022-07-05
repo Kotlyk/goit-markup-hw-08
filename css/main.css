@@ -48,10 +48,24 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 header {
@@ -205,13 +219,6 @@ header .logo {
   cursor: pointer;
 }
 
-.feature {
-  display: flex;
-}
-
-.feature__item {
-  margin-right: 30px;
-}
 .feature__item::before {
   display: block;
   content: "";
@@ -233,9 +240,6 @@ header .logo {
 }
 .feature__item.icon-austronaut::before {
   background-image: url(../imges/astronaut.svg);
-}
-.feature__item:nth-last-child(-n+1) {
-  margin-right: 0;
 }
 
 .feature__subtitle {

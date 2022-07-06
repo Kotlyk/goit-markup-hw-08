@@ -7,7 +7,14 @@
 
 
 .feature__item {
-    width: 100%;
+   width: 100%;
+  @media screen and (min-width: 768px)  {
+  width: calc((100% - 30px) / 2);
+   }
+
+  @media screen and (min-width: 1200px)  {
+   width: calc((100% - 90px) / 4);
+    }
     &::before {
     display: block;
     content: "";
@@ -30,15 +37,8 @@
   &.icon-austronaut::before {
     background-image: url(../imges/astronaut.svg);
   }
-  @media screen and (min-width 768px)  {
-   width: calc((100% - 30px) / 2);
-    }
-
-  @media screen and (min-width 1200px)  {
-   width: calc((100% - 60px) / 4);
-    }
-  
-  }
+ 
+}
 
 .feature__subtitle {
   margin-top: 0;

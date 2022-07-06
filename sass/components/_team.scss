@@ -1,19 +1,21 @@
 .team{
     background-color: var(--accent-backgroud-color);
-    padding-bottom: 94px;
+  
+
 }
 
 .team__item{
 display: flex;
+flex-wrap: wrap;
+gap: 30px;
 }
 
 .team__photo{
     background-color: #FFFFFF;
-    margin-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-	&:nth-last-child(-n+1){
-    margin-right: 0;
-}
+  
 }
 
 .team__subtitle {

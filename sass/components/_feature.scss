@@ -1,19 +1,16 @@
 .feature {
-    // display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  }
+ 
 
-}
 
 .feature__item {
-  // margin-right: 30px;
     width: 100%;
-    margin-bottom: 30px;
-    &:last-child{
-      margin-bottom: 0;
-    }
-  &::before {
+    &::before {
     display: block;
     content: "";
-  
     height: 120px;
     background-repeat: no-repeat;
     background-position: center;
@@ -33,10 +30,15 @@
   &.icon-austronaut::before {
     background-image: url(../imges/astronaut.svg);
   }
-  // &:nth-last-child(-n+1) {
-  // margin-right: 0;
-  // }
-}
+  @media screen and (min-width 768px)  {
+   width: calc((100% - 30px) / 2);
+    }
+
+  @media screen and (min-width 1200px)  {
+   width: calc((100% - 60px) / 4);
+    }
+  
+  }
 
 .feature__subtitle {
   margin-top: 0;
@@ -51,7 +53,6 @@
 }
 
 .feature__text {
-  // 
   width: 100%;
   margin: 0;
   padding: 0;

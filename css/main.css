@@ -231,12 +231,14 @@ header .logo {
   cursor: pointer;
 }
 
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .feature__item {
   width: 100%;
-  margin-bottom: 30px;
-}
-.feature__item:last-child {
-  margin-bottom: 0;
 }
 .feature__item::before {
   display: block;
@@ -259,6 +261,16 @@ header .logo {
 }
 .feature__item.icon-austronaut::before {
   background-image: url(../imges/astronaut.svg);
+}
+@media screen and (min-width 768px) {
+  .feature__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width 1200px) {
+  .feature__item {
+    width: calc((100% - 60px) / 4);
+  }
 }
 
 .feature__subtitle {

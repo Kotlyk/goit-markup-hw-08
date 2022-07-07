@@ -6,7 +6,6 @@
      display: flex;
      gap: 8px;
  
-    //  justify-content: center;
     @include mobile {
     flex-wrap: wrap;
     margin-right: auto;
@@ -23,9 +22,9 @@
  }
 
 
- .btn__item {
+//  .btn__item {
     
-    }
+//     }
 
  
 

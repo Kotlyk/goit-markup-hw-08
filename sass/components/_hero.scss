@@ -2,12 +2,28 @@
     display: block;
     background-color: #2F303A;
     text-align: center;
-    padding: 200px 0;
+    @include mobile{
+        padding: 118px 0;
+    }
+    @include desktop{
+   padding: 200px 0;
+    }
+ 
 }
-
 .overlay {
-    max-width: 1600px;
-    height: 600px;
+    @include mobile{
+        max-width: 480px;
+        height: 400px;
+    }
+    @include tablet{
+         max-width: 768px;
+       
+    }
+    @include desktop{
+          max-width: 1600px;
+      height: 600px; 
+    }
+   
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
@@ -19,17 +35,28 @@
 }
 
 .hero-title {
-    max-width: 696px;
+   
     margin-right: auto;
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 30px;
     color: var(--title-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
     text-transform: uppercase;
     letter-spacing: 0.06em;
+   @include mobile{
+     max-width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+   }
+
+   @include desktop{
+   max-width: 696px;
+     font-size: 44px;
+    line-height: 1.4;
+ 
+   }
+  
 }
 
 .button {

@@ -1,10 +1,8 @@
-//  .section.portfolio {
-//      padding-bottom: 94px;
-//  }
 
 .btn {
      display: flex;
-     gap: 8px;
+     row-gap: 15px;
+     column-gap: 8px;
  
     @include mobile {
     flex-wrap: wrap;

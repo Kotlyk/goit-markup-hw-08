@@ -47,8 +47,7 @@
  .project__item {
     position: relative;
      background-color: #FFFFFF;
-     width: 370px;
-    margin-right: auto;
+        margin-right: auto;
      
     @include tablet {
         width: calc((100% - 30px) / 2);
@@ -59,7 +58,8 @@
 }
 
  .project__about {
-     width: 100%;
+    flex-grow: 1;
+    width: 100%;
      height: 100%;
      padding: 20px 24px;
      border: #ECECEC solid 1px;

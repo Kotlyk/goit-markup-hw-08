@@ -46,8 +46,8 @@
 
  .project__item {
     position: relative;
-     background-color: #FFFFFF;
-        margin-right: auto;
+    background-color: #FFFFFF;
+    margin-right: auto;
      
     @include tablet {
         width: calc((100% - 30px) / 2);

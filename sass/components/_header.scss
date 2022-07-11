@@ -1,7 +1,7 @@
 header{
     background-color: #FFFFFF;
     outline: #ECECEC solid 1px;
-    .container{
+    >.container{
     display: flex;
     align-items: center;
     }
@@ -26,7 +26,14 @@ header{
 .logo-accent {
     color: var(--accent-color);
 }
+
+
 .menu-nav{
+ @include mobile{
+     display: none;
+}
+
+ @include desktop {
     display: flex;
     position: relative;
     .menu-item{
@@ -48,7 +55,7 @@ header{
     .link:focus{
     color: var(--accent-color);
 }
- 
+ }
 }
 
 .menu-item{
@@ -101,8 +108,11 @@ header{
      .contacts-item:first-child{
     margin-left: 0;
 }
+  @include mobile{
+     display: none;
+  
 }
-
+}
 .contacts-item .link{
     display: flex;
     align-items: center;

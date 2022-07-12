@@ -4,7 +4,9 @@
     margin-left: auto;
     margin-top: 10px;
     margin-bottom: 10px;
- 
+ @include tablet{
+    display: none;
+ }
 
 }
 .btn-menu-close{
@@ -121,12 +123,8 @@ padding-bottom: 48px;
     
 }
 .soc-menu-link::after{
-    display: block;
     content: '';
     width: 1px;
     background-color: var(--primary-text-color);
     margin-left: 10px;
- 
-
-
-}
+ }

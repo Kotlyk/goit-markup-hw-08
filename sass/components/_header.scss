@@ -20,6 +20,11 @@ header {
     header .logo{
         margin-right: 88px;
     }
+    @include desktop{
+      header .logo{
+        margin-right: 93px;
+    } 
+    }
 }
 
 .logo:hover,
@@ -82,7 +87,9 @@ header {
 .mail-icon {
   fill: currentColor;
   margin-right: 10px;
+  
 }
+
 
 .contacts {
   @include mobile {
@@ -92,7 +99,8 @@ header {
   @include tablet {
     display: flex;
     flex-direction: column;
-
+    margin-left: auto;
+ 
     .link {
       color: var(--primary-text-color);
       font-weight: 500;
@@ -108,15 +116,33 @@ header {
     }
   }
 
+  @include tablet{
+     .contacts-item:first-child {
+      margin-top: 0;
+    }
+    .contacts-item {
+      margin-top: 10px;
+     
+    }
+  }
   @include desktop {
+    flex-direction: row;
    
+    
     .contacts-item:first-child {
       margin-left: 0;
     }
     .contacts-item {
       margin-left: 50px;
-      .contacts-item .link {
-      }
+      margin-top: 0;
+     
     }
   }
+}
+
+
+.contacts-item .link{
+    display: flex;
+    align-items: center;
+   
 }

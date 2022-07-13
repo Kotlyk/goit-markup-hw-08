@@ -28,7 +28,17 @@
     background-color: rgba(255, 255, 255, 1);
     transition: transform 300ms;
     padding: 40px;
- 
+ @include mobile{
+    min-width: 450px;
+    min-height:609px;
+ }
+ @include tablet{
+
+ }
+ @include desktop{
+     min-width: 528px;
+    min-height: 581px;
+ }
 }
 .btn-modal{
     position: absolute;
@@ -137,22 +147,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     font-weight: 400;
-    letter-spacing: 00.03em;
+    letter-spacing: 0.03em;
     color: var(--primary-text-color);
     margin-top: 20px;
+    @include desktop{
+    font-size: 14px;
+    line-height: 1.71;   
+    }
     a{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     font-weight: 400;
     letter-spacing: 00.03em;
     color: var(--accent-color);
-
+     @include desktop{
+    font-size: 14px;
+    line-height: 1.71;   
+    }
 }
 }
 .policy-input {

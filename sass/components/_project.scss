@@ -2,6 +2,7 @@
      display: flex;
      flex-wrap: wrap;
      gap: 30px;
+     
  }
 
  .project__thumb{
@@ -45,9 +46,10 @@
  }
 
  .project__item {
+    
     position: relative;
     background-color: #FFFFFF;
-    margin-right: auto;
+   
      
     @include tablet {
         width: calc((100% - 30px) / 2);

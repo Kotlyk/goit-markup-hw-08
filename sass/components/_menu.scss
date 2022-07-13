@@ -4,8 +4,14 @@
     margin-left: auto;
     margin-top: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
+    &:hover,
+    &:focus{
+    fill: var(--accent-color);
+    }
  @include tablet{
     display: none;
+   
  }
 
 }
@@ -16,9 +22,18 @@
     border: none;
     background-color: transparent;
     padding: 0;
+    cursor: pointer;
+    &:hover,
+    &:focus{
+    fill: var(--accent-color);
+    }
 
 }
 .mob-menu{
+     &.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+    }
 position: fixed ;
 z-index: 2;
 background-color: #fff;
@@ -122,9 +137,10 @@ padding-bottom: 48px;
    
     
 }
-.soc-menu-link::after{
+.soc-menu-item:not(:last-child) .soc-menu-link::after{
     content: '';
     width: 1px;
     background-color: var(--primary-text-color);
     margin-left: 10px;
+   
  }

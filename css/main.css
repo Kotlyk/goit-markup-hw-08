@@ -15,21 +15,30 @@ p {
 }
 
 .section-title {
+  font-size: 25px;
+  line-height: 1.14;
   margin-top: 0;
   margin-bottom: 50px;
   padding: 0;
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
   text-align: center;
 }
-
 @media screen and (min-width: 480px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  .section-title {
+    font-size: 28px;
   }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .section {
@@ -128,10 +137,8 @@ header .logo {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) {
-  .menu-nav {
-    display: none;
-  }
+.menu-nav {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .menu-nav {
@@ -183,10 +190,8 @@ header .logo {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 480px) {
-  .contacts {
-    display: none;
-  }
+.contacts {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .contacts {
@@ -328,11 +333,16 @@ header .logo {
 }
 
 .mob-link-tel {
+  font-size: 30px;
   font-weight: 500;
-  font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-link-tel {
+    font-size: 34px;
+  }
 }
 
 .mob-link-mail {
@@ -349,9 +359,15 @@ header .logo {
 
 .soc-menu {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0;
   margin: 0;
+}
+@media screen and (min-width: 480px) {
+  .soc-menu {
+    flex-direction: row;
+  }
 }
 
 .soc-menu-link {
@@ -363,6 +379,12 @@ header .logo {
   letter-spacing: 0.02em;
   color: var(--accent-color);
   margin-right: 10px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 480px) {
+  .soc-menu-link {
+    margin-bottom: 0;
+  }
 }
 
 .soc-menu-item:not(:last-child) .soc-menu-link::after {
@@ -376,11 +398,7 @@ header .logo {
   display: block;
   background-color: #2F303A;
   text-align: center;
-}
-@media screen and (min-width: 480px) {
-  .hero {
-    padding: 118px 0;
-  }
+  padding: 118px 0;
 }
 @media screen and (min-width: 1200px) {
   .hero {
@@ -663,7 +681,7 @@ header .logo {
   border-radius: 4px;
   border-color: #AFB1B8;
   margin-right: auto;
-  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 480px) {
   .clients__item {
@@ -1157,12 +1175,12 @@ footer .logo {
   display: flex;
   row-gap: 15px;
   column-gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 480px) {
   .btn {
-    flex-wrap: wrap;
     margin-right: auto;
-    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1270,10 +1288,6 @@ footer .logo {
   height: 100%;
   padding: 20px 24px;
   border: #ECECEC solid 1px;
-}
-
-.project__img {
-  display: block;
 }
 
 .shaddow {

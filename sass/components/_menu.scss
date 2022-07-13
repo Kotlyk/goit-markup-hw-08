@@ -98,12 +98,15 @@ padding-bottom: 48px;
 }  
 
 .mob-link-tel{
-   
+    font-size: 30px; 
     font-weight: 500;
-    font-size: 34px;
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    @include mobile{
+     font-size: 34px;   
+    }
+  
     
 }
 .mob-link-mail{
@@ -122,9 +125,13 @@ padding-bottom: 48px;
 
 .soc-menu {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 0;
-    margin: 0;
+    margin:0;
+    @include mobile{
+        flex-direction: row;
+    }
    
 }
 
@@ -137,6 +144,10 @@ padding-bottom: 48px;
     letter-spacing: 0.02em;
     color: var(--accent-color);
     margin-right: 10px;
+    margin-bottom: 10px;
+    @include mobile{
+        margin-bottom: 0;
+    }
    
     
 }

@@ -2,9 +2,8 @@
     display: block;
     background-color: #2F303A;
     text-align: center;
-    @include mobile{
-    padding: 118px 0;
-    }
+     padding: 118px 0;
+    
     @include desktop{
    padding: 200px 0;
     }

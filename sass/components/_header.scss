@@ -37,11 +37,10 @@ header {
 }
 
 .menu-nav {
-  @include mobile {
+  
     display: none;
-  }
 
-  @include tablet {
+    @include tablet {
     display: flex;
     position: relative;
     .menu-item {
@@ -92,10 +91,7 @@ header {
 
 
 .contacts {
-  @include mobile {
-    display: none;
-  }
-
+ display: none;
   @include tablet {
     display: flex;
     flex-direction: column;

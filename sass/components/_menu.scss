@@ -67,7 +67,10 @@ padding-bottom: 48px;
     .link:focus{
     color: var(--accent-color);
 }
- 
+
+.activ{
+   color: var(--accent-color); 
+}
 
 
 .mob-menu-item:not(:last-child){

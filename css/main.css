@@ -44,6 +44,12 @@ p {
   }
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -296,6 +302,10 @@ header .logo {
   color: var(--accent-color);
 }
 
+.activ {
+  color: var(--accent-color);
+}
+
 .mob-menu-item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -379,27 +389,40 @@ header .logo {
 }
 
 .overlay {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero.jpg);
   margin-left: auto;
   margin-right: auto;
   background-size: contain;
   background-repeat: no-repeat;
+  max-width: 480px;
+  height: 400px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../imges/hero-mob-1x.jpg);
 }
-@media screen and (min-width: 480px) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
-    max-width: 480px;
-    height: 400px;
+    ackground-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../imges/hero-mob-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .overlay {
     max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../..//imges/hero-tab-1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    ackground-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../imges/hero-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .overlay {
     max-width: 1600px;
     height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../imges/hero-desk-1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    ackground-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../imges/hero-desk-2x.jpg);
   }
 }
 
@@ -1180,6 +1203,12 @@ footer .logo {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .project {
+    justify-content: flex-start;
+  }
 }
 
 .project__thumb {
@@ -1252,4 +1281,10 @@ footer .logo {
 }
 .shaddow:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.1607843137), 0px 4px 4px 0px rgba(0, 0, 0, 0.0588235294), 0px 1px 1px 0px rgba(0, 0, 0, 0.1215686275);
+}
+
+.poject-link {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */

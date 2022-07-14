@@ -22,8 +22,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 528px;
-    min-height: 581px;
+   
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 1);
     transition: transform 300ms;
@@ -147,31 +146,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 6px;
     line-height: 1.17;
     font-weight: 400;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     margin-top: 20px;
+    @include mobile{
+        font-size: 12px;
+    }
     @include desktop{
     font-size: 14px;
     line-height: 1.71;   
     }
-    a{
-    display: flex;
+     a{
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 6px;
     line-height: 1.17;
     font-weight: 400;
     letter-spacing: 00.03em;
     color: var(--accent-color);
+    @include mobile{
+        font-size: 12px;
+    }
      @include desktop{
     font-size: 14px;
     line-height: 1.71;   
     }
-}
-}
+} 
+ }
+
+
+
 .policy-input {
     appearance: none;
     position: absolute;

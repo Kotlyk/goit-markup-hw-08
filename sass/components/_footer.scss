@@ -19,23 +19,17 @@ footer {
 
 .footer__item   {
      display: flex;
-   @include mobile{
-    flex-wrap: wrap;
+     flex-wrap: wrap;
     gap: 60px;
     justify-content: center;
-   }
-   @include desktop{
+     @include desktop{
     flex-wrap: nowrap;
     gap: 0;
    }
 }
 .footer-logo{
-   @include mobile{
-      text-align: center;
-  }
- @include tablet{
-  text-align: center;
-  }
+text-align: center;
+
     @include desktop{
     text-align:left;
   } 
@@ -96,12 +90,8 @@ footer {
   color: var(--title-color);
   margin-top: 12px;
   margin-bottom: 20px;
-  @include mobile{
-      text-align: center;
-  }
- @include tablet{
   text-align: center;
-  }
+ 
   @include desktop{
     text-align:left;
   }
@@ -155,12 +145,8 @@ footer {
   color: var(--title-color);
   margin-top: 12px;
   margin-bottom: 20px;
-  @include mobile{
-      text-align: center;
-  }
- @include tablet{
-  text-align: center;
-  }
+text-align: center;
+ 
     @include desktop{
     text-align:left;
   }
